@@ -1,0 +1,63 @@
+:root{
+
+        /* Example Colors*/
+        /* CSS HEX */
+        --ivory: #FFFCEFff;
+        --tea-green: #dde5b6ff;
+        --olivine: #adc178ff;
+        --viridian: #507D5Fff;
+        --van-dyke: #493A31ff;
+
+        /* Main Colors */
+        --color-primary: #dde5b6ff; 
+        --color-secondary: #adc178ff;
+        --color-accent: #493A31ff; 
+        --color-background: #FFFCEFff; 
+        --color-border: #cccccc; 
+        --color-shadow: rgba(0, 0, 0, 0.1); 
+
+        /* Text Colors */ 
+        --color-text-primary: #507D5Fff;
+        --color-text-secondary: #493A31ff;
+        --color-text-inverse: #FFFCEFff;
+
+        /* Text Font */
+
+        /* Button */
+        --color-button-background: #493A31ff;
+        --color-button-text: #adc178ff;
+        --color-button-hover: #2980b9;
+
+
+        /* Notifaction  */
+        --color-success: #2ecc71;
+        --color-warning: #f1c40f;
+        --color-error: #e74c3c;
+        --color-info: #3498db;
+
+}
+
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+div{
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    width: 150px;
+    height: 150px;
+}
+button{
+    background-color: var(--color-button-background);
+    color: var(--color-button-text);
+}
+button:hover{
+    background-color: var(--color-button-text);
+    color: var(--color-button-background);
+}
+
+
+
+
+
