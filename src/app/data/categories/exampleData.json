@@ -1,13 +1,13 @@
-const CATEGORIES = {
-    "MainCategories": [
+{
+    "mainCategories": [
       {
         "id": 1,
         "name": "Electronics",
-        "SubCategories": [
+        "subCategories": [
           {
             "id": 1,
             "name": "Computers",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Laptops" },
               { "id": 2, "name": "Desktops" },
               { "id": 3, "name": "Tablets" },
@@ -18,7 +18,7 @@ const CATEGORIES = {
           {
             "id": 2,
             "name": "Smartphones",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Android" },
               { "id": 2, "name": "iPhone" },
               { "id": 3, "name": "Accessories" },
@@ -28,7 +28,8 @@ const CATEGORIES = {
           {
             "id": 3,
             "name": "Audio",
-            "DetailCategories": [
+            "detailCategories": [
+              
               { "id": 1, "name": "Headphones" },
               { "id": 2, "name": "Speakers" },
               { "id": 3, "name": "Soundbars" },
@@ -38,7 +39,7 @@ const CATEGORIES = {
           {
             "id": 4,
             "name": "Cameras",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "DSLR" },
               { "id": 2, "name": "Mirrorless" },
               { "id": 3, "name": "Action Cameras" },
@@ -50,11 +51,11 @@ const CATEGORIES = {
       {
         "id": 2,
         "name": "Clothing",
-        "SubCategories": [
+        "subCategories": [
           {
             "id": 1,
             "name": "Women",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Dresses" },
               { "id": 2, "name": "Pants" },
               { "id": 3, "name": "Shoes" },
@@ -65,7 +66,7 @@ const CATEGORIES = {
           {
             "id": 2,
             "name": "Men",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Suits" },
               { "id": 2, "name": "Shirts" },
               { "id": 3, "name": "Jeans" },
@@ -76,7 +77,7 @@ const CATEGORIES = {
           {
             "id": 3,
             "name": "Kids",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "T-Shirts" },
               { "id": 2, "name": "Shorts" },
               { "id": 3, "name": "Shoes" },
@@ -86,7 +87,7 @@ const CATEGORIES = {
           {
             "id": 4,
             "name": "Accessories",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Belts" },
               { "id": 2, "name": "Watches" },
               { "id": 3, "name": "Bags" },
@@ -98,11 +99,11 @@ const CATEGORIES = {
       {
         "id": 3,
         "name": "Furniture",
-        "SubCategories": [
+        "subCategories": [
           {
             "id": 1,
             "name": "Living Room",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Sofas" },
               { "id": 2, "name": "Coffee Tables" },
               { "id": 3, "name": "Recliners" },
@@ -113,7 +114,7 @@ const CATEGORIES = {
           {
             "id": 2,
             "name": "Bedroom",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Beds" },
               { "id": 2, "name": "Wardrobes" },
               { "id": 3, "name": "Nightstands" },
@@ -123,7 +124,7 @@ const CATEGORIES = {
           {
             "id": 3,
             "name": "Kitchen & Dining",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Dining Tables" },
               { "id": 2, "name": "Chairs" },
               { "id": 3, "name": "Bar Stools" },
@@ -133,7 +134,7 @@ const CATEGORIES = {
           {
             "id": 4,
             "name": "Office Furniture",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Desks" },
               { "id": 2, "name": "Office Chairs" },
               { "id": 3, "name": "File Cabinets" }
@@ -144,11 +145,11 @@ const CATEGORIES = {
       {
         "id": 4,
         "name": "Sports & Leisure",
-        "SubCategories": [
+        "subCategories": [
           {
             "id": 1,
             "name": "Fitness",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Treadmills" },
               { "id": 2, "name": "Dumbbells" },
               { "id": 3, "name": "Exercise Bikes" },
@@ -158,7 +159,7 @@ const CATEGORIES = {
           {
             "id": 2,
             "name": "Outdoor",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Tents" },
               { "id": 2, "name": "Camping Gear" },
               { "id": 3, "name": "Hiking Boots" },
@@ -168,7 +169,7 @@ const CATEGORIES = {
           {
             "id": 3,
             "name": "Team Sports",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Soccer" },
               { "id": 2, "name": "Basketball" },
               { "id": 3, "name": "Tennis" },
@@ -178,7 +179,7 @@ const CATEGORIES = {
           {
             "id": 4,
             "name": "Water Sports",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Surfboards" },
               { "id": 2, "name": "Swimwear" },
               { "id": 3, "name": "Snorkeling Gear" }
@@ -189,11 +190,11 @@ const CATEGORIES = {
       {
         "id": 5,
         "name": "Groceries",
-        "SubCategories": [
+        "subCategories": [
           {
             "id": 1,
             "name": "Beverages",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Water" },
               { "id": 2, "name": "Juices" },
               { "id": 3, "name": "Soda" },
@@ -204,7 +205,7 @@ const CATEGORIES = {
           {
             "id": 2,
             "name": "Snacks",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Chips" },
               { "id": 2, "name": "Chocolate" },
               { "id": 3, "name": "Cookies" },
@@ -214,7 +215,7 @@ const CATEGORIES = {
           {
             "id": 3,
             "name": "Dairy",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Milk" },
               { "id": 2, "name": "Cheese" },
               { "id": 3, "name": "Yogurt" },
@@ -224,7 +225,7 @@ const CATEGORIES = {
           {
             "id": 4,
             "name": "Bakery",
-            "DetailCategories": [
+            "detailCategories": [
               { "id": 1, "name": "Bread" },
               { "id": 2, "name": "Pastries" },
               { "id": 3, "name": "Bagels" },
@@ -235,5 +236,3 @@ const CATEGORIES = {
       }
     ]
   }
-  
-  export default CATEGORIES
