@@ -1,0 +1,239 @@
+const CATEGORIES = {
+    "MainCategories": [
+      {
+        "id": 1,
+        "name": "Electronics",
+        "SubCategories": [
+          {
+            "id": 1,
+            "name": "Computers",
+            "DetailCategories": [
+              { "id": 1, "name": "Laptops" },
+              { "id": 2, "name": "Desktops" },
+              { "id": 3, "name": "Tablets" },
+              { "id": 4, "name": "Monitors" },
+              { "id": 5, "name": "Printers" }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Smartphones",
+            "DetailCategories": [
+              { "id": 1, "name": "Android" },
+              { "id": 2, "name": "iPhone" },
+              { "id": 3, "name": "Accessories" },
+              { "id": 4, "name": "Chargers" }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Audio",
+            "DetailCategories": [
+              { "id": 1, "name": "Headphones" },
+              { "id": 2, "name": "Speakers" },
+              { "id": 3, "name": "Soundbars" },
+              { "id": 4, "name": "Home Audio Systems" }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Cameras",
+            "DetailCategories": [
+              { "id": 1, "name": "DSLR" },
+              { "id": 2, "name": "Mirrorless" },
+              { "id": 3, "name": "Action Cameras" },
+              { "id": 4, "name": "Lenses" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Clothing",
+        "SubCategories": [
+          {
+            "id": 1,
+            "name": "Women",
+            "DetailCategories": [
+              { "id": 1, "name": "Dresses" },
+              { "id": 2, "name": "Pants" },
+              { "id": 3, "name": "Shoes" },
+              { "id": 4, "name": "Tops" },
+              { "id": 5, "name": "Jackets" }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Men",
+            "DetailCategories": [
+              { "id": 1, "name": "Suits" },
+              { "id": 2, "name": "Shirts" },
+              { "id": 3, "name": "Jeans" },
+              { "id": 4, "name": "Shoes" },
+              { "id": 5, "name": "Coats" }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Kids",
+            "DetailCategories": [
+              { "id": 1, "name": "T-Shirts" },
+              { "id": 2, "name": "Shorts" },
+              { "id": 3, "name": "Shoes" },
+              { "id": 4, "name": "School Uniforms" }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Accessories",
+            "DetailCategories": [
+              { "id": 1, "name": "Belts" },
+              { "id": 2, "name": "Watches" },
+              { "id": 3, "name": "Bags" },
+              { "id": 4, "name": "Sunglasses" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Furniture",
+        "SubCategories": [
+          {
+            "id": 1,
+            "name": "Living Room",
+            "DetailCategories": [
+              { "id": 1, "name": "Sofas" },
+              { "id": 2, "name": "Coffee Tables" },
+              { "id": 3, "name": "Recliners" },
+              { "id": 4, "name": "TV Units" },
+              { "id": 5, "name": "Bookshelves" }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Bedroom",
+            "DetailCategories": [
+              { "id": 1, "name": "Beds" },
+              { "id": 2, "name": "Wardrobes" },
+              { "id": 3, "name": "Nightstands" },
+              { "id": 4, "name": "Dressers" }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Kitchen & Dining",
+            "DetailCategories": [
+              { "id": 1, "name": "Dining Tables" },
+              { "id": 2, "name": "Chairs" },
+              { "id": 3, "name": "Bar Stools" },
+              { "id": 4, "name": "Cabinets" }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Office Furniture",
+            "DetailCategories": [
+              { "id": 1, "name": "Desks" },
+              { "id": 2, "name": "Office Chairs" },
+              { "id": 3, "name": "File Cabinets" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Sports & Leisure",
+        "SubCategories": [
+          {
+            "id": 1,
+            "name": "Fitness",
+            "DetailCategories": [
+              { "id": 1, "name": "Treadmills" },
+              { "id": 2, "name": "Dumbbells" },
+              { "id": 3, "name": "Exercise Bikes" },
+              { "id": 4, "name": "Yoga Mats" }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Outdoor",
+            "DetailCategories": [
+              { "id": 1, "name": "Tents" },
+              { "id": 2, "name": "Camping Gear" },
+              { "id": 3, "name": "Hiking Boots" },
+              { "id": 4, "name": "Backpacks" }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Team Sports",
+            "DetailCategories": [
+              { "id": 1, "name": "Soccer" },
+              { "id": 2, "name": "Basketball" },
+              { "id": 3, "name": "Tennis" },
+              { "id": 4, "name": "Baseball" }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Water Sports",
+            "DetailCategories": [
+              { "id": 1, "name": "Surfboards" },
+              { "id": 2, "name": "Swimwear" },
+              { "id": 3, "name": "Snorkeling Gear" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Groceries",
+        "SubCategories": [
+          {
+            "id": 1,
+            "name": "Beverages",
+            "DetailCategories": [
+              { "id": 1, "name": "Water" },
+              { "id": 2, "name": "Juices" },
+              { "id": 3, "name": "Soda" },
+              { "id": 4, "name": "Coffee" },
+              { "id": 5, "name": "Tea" }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Snacks",
+            "DetailCategories": [
+              { "id": 1, "name": "Chips" },
+              { "id": 2, "name": "Chocolate" },
+              { "id": 3, "name": "Cookies" },
+              { "id": 4, "name": "Nuts" }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Dairy",
+            "DetailCategories": [
+              { "id": 1, "name": "Milk" },
+              { "id": 2, "name": "Cheese" },
+              { "id": 3, "name": "Yogurt" },
+              { "id": 4, "name": "Butter" }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Bakery",
+            "DetailCategories": [
+              { "id": 1, "name": "Bread" },
+              { "id": 2, "name": "Pastries" },
+              { "id": 3, "name": "Bagels" },
+              { "id": 4, "name": "Muffins" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
+  export default CATEGORIES
