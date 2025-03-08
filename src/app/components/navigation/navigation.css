@@ -1,0 +1,54 @@
+nav {
+    background-color: var(--color-primary);
+    font-size: 1.25rem;
+
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav a{
+    color: var( --color-text-primary );
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var( --color-text-secondary);
+    text-decoration:underline;
+}
+
+   
+.navi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.main_cat:hover{
+    .sub_cat{
+        display: block;
+    }
+}
+
+.sub_cat{
+    display: none;
+}
+
+.sub_cat_container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sub_cat:hover{
+    .detail_cat{
+        display: block;
+    }
+}
+
+.detail_cat{
+    display:none
+}
+
